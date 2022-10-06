@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Quản lý tài khoản - Admin</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+  
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <link href="assets/vendor/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+    <link href="assets/vendor/fontawesome/css/solid.min.css" rel="stylesheet">
+    <link href="assets/vendor/fontawesome/css/brands.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap copy/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/datatables/datatables.min.css" rel="stylesheet">
+    <link href="assets/css/master.css" rel="stylesheet">
+
+  
+
+  <!-- =======================================================
+  * Template Name: NiceAdmin - v2.4.0
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+        <span class="d-none d-lg-block">NiceAdmin</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="DieuKhien.html">
+          <i class="bi bi-grid"></i>
+          <span>Điều khiển</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+  
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-journal-text"></i><span>Quản lý sản phẩm</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="TatCaSP.html">
+              <i class="bi bi-circle"></i><span>Tất cả sản phẩm</span>
+            </a>
+          </li>
+          <li>
+            <a href="ThemSP.html">
+              <i class="bi bi-circle"></i><span>Thêm sản phẩm mới</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Forms Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="ThongKe.html">
+          <i class="bi bi-bar-chart"></i>
+          <span>Thống kê</span>
+        </a>
+      </li><!-- End Charts Nav -->
+
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#forms-nav1" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-journal-text"></i><span>Quản lý tài khoản</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="forms-nav1" class="nav-content" data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="TatCaTK.html" class="active">
+              <i class="bi bi-circle"></i><span>Tất cả tài khoản</span>
+            </a>
+          </li>
+          <li>
+            <a href="ThemTK.html">
+              <i class="bi bi-circle"></i><span>Thêm tài khoản</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Forms Nav -->
+    </ul>
+
+  </aside><!-- End Sidebar-->
+
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>Quản lý tài khoản</h1>
+      
+    </div><!-- End Page Title -->
+
+    <h3>Người dùng
+        <a href="ThemTK.html" class="btn btn-sm btn-outline-primary float-end"><i class="fas fa-plus-circle"></i> Add</a>
+    </h3>
+    <div class="box-body">
+        <table width="100%" class="table table-hover" id="dataTables-example">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Type</th>
+                    <th>Status</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Philip Chaney</td>
+                    <td>philip.chaney@gmail.com</td>
+                    <td>Manager</td>
+                    <td>Admin</td>
+                    <td>Active</td>
+                    <td class="text-end">
+                        <a href="" class="btn btn-outline-info btn-rounded"><i class="fas fa-pen"></i></a>
+                        <a href="" class="btn btn-outline-danger btn-rounded"><i class="fas fa-trash"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Doris Greene</td>
+                    <td>ms.greene@outlook.com</td>
+                    <td>Writer</td>
+                    <td>Staff</td>
+                    <td>Active</td>
+                    <td class="text-end">
+                        <a href="" class="btn btn-outline-info btn-rounded"><i class="fas fa-pen"></i></a>
+                        <a href="" class="btn btn-outline-danger btn-rounded"><i class="fas fa-trash"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mason Porter</td>
+                    <td>mason_porter@gmail.com</td>
+                    <td>Contributor</td>
+                    <td>Staff</td>
+                    <td>Active</td>
+                    <td class="text-end">
+                        <a href="" class="btn btn-outline-info btn-rounded"><i class="fas fa-pen"></i></a>
+                        <a href="" class="btn btn-outline-danger btn-rounded"><i class="fas fa-trash"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Minerva Hooper</td>
+                    <td>minerva.hooper@gmail.com</td>
+                    <td>Administrator</td>
+                    <td>Admin</td>
+                    <td>Disabled</td>
+                    <td class="text-end">
+                        <a href="" class="btn btn-outline-info btn-rounded"><i class="fas fa-pen"></i></a>
+                        <a href="" class="btn btn-outline-danger btn-rounded"><i class="fas fa-trash"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jessie Williams</td>
+                    <td>jessie@gmail.com</td>
+                    <td>Administrator</td>
+                    <td>Admin</td>
+                    <td>Active</td>
+                    <td class="text-end">
+                        <a href="" class="btn btn-outline-info btn-rounded"><i class="fas fa-pen"></i></a>
+                        <a href="" class="btn btn-outline-danger btn-rounded"><i class="fas fa-trash"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Peter Benhams</td>
+                    <td>pette@gmail.com</td>
+                    <td>Editor</td>
+                    <td>Staff</td>
+                    <td>Active</td>
+                    <td class="text-end">
+                        <a href="" class="btn btn-outline-info btn-rounded"><i class="fas fa-pen"></i></a>
+                        <a href="" class="btn btn-outline-danger btn-rounded"><i class="fas fa-trash"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jose Rodriguez</td>
+                    <td>jose.rodz@gmail.com</td>
+                    <td>Author</td>
+                    <td>Staff</td>
+                    <td>Active</td>
+                    <td class="text-end">
+                        <a href="" class="btn btn-outline-info btn-rounded"><i class="fas fa-pen"></i></a>
+                        <a href="" class="btn btn-outline-danger btn-rounded"><i class="fas fa-trash"></i></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
+    </div>
+  
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.min.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

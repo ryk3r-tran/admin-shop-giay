@@ -67,7 +67,7 @@
   
 
       <li class="nav-item">
-        <a class="nav-link" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
           <i class="bi bi-journal-text"></i><span>Quản lý sản phẩm</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
         <ul id="forms-nav" class="nav-content" data-bs-parent="#sidebar-nav">
@@ -93,11 +93,22 @@
 
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="QLTaiKhoan.html">
-          <i class="bi bi-card-list"></i>
-          <span>Quản lý tài khoản</span>
+        <a class="nav-link collapsed" data-bs-target="#forms-nav1" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-journal-text"></i><span>Quản lý tài khoản</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
-      </li><!-- End Register Page Nav -->
+        <ul id="forms-nav1" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="TatCaTK.html" class="active">
+              <i class="bi bi-circle"></i><span>Tất cả tài khoản</span>
+            </a>
+          </li>
+          <li>
+            <a href="ThemTK.html">
+              <i class="bi bi-circle"></i><span>Thêm tài khoản</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Forms Nav -->
     </ul>
 
   </aside><!-- End Sidebar-->
